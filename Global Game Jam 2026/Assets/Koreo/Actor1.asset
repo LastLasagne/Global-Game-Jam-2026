@@ -13,74 +13,10 @@ MonoBehaviour:
   m_Name: Actor1
   m_EditorClassIdentifier: 
   mEventID: Actor1
-  mEventList:
-  - mStartSample: 0
-    mEndSample: 0
-  - mStartSample: 228118
-    mEndSample: 228118
-  - mStartSample: 256633
-    mEndSample: 256633
-  - mStartSample: 285147
-    mEndSample: 285147
-  - mStartSample: 313662
-    mEndSample: 313662
-  - mStartSample: 342177
-    mEndSample: 342177
-  - mStartSample: 456237
-    mEndSample: 456237
-  - mStartSample: 484752
-    mEndSample: 484752
-  - mStartSample: 513267
-    mEndSample: 513267
-  - mStartSample: 541781
-    mEndSample: 541781
-  - mStartSample: 570296
-    mEndSample: 570296
-  - mStartSample: 684356
-    mEndSample: 684356
-  - mStartSample: 712871
-    mEndSample: 712871
-  - mStartSample: 741386
-    mEndSample: 741386
-  - mStartSample: 769901
-    mEndSample: 769901
-  - mStartSample: 798415
-    mEndSample: 798415
-  - mStartSample: 912475
-    mEndSample: 912475
-  - mStartSample: 940989
-    mEndSample: 940989
-  - mStartSample: 969504
-    mEndSample: 969504
-  - mStartSample: 998019
-    mEndSample: 998019
-  - mStartSample: 1026534
-    mEndSample: 1026534
-  _SerializedPayloadTypes:
-  - SonicBloom.Koreo.AssetPayload
-  _AssetPayloads:
-  - mAssetVal: {fileID: 11400000, guid: 9187f65098e636144b3e6c966aa9fe74, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: c3c40352dc28c554589831b46f7969f3, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 6bf80cde3bf10bb459d3b97662149ec9, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: c3c40352dc28c554589831b46f7969f3, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 6bf80cde3bf10bb459d3b97662149ec9, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: c3c40352dc28c554589831b46f7969f3, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 6bf80cde3bf10bb459d3b97662149ec9, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 98647e98d3c23f64bac096f3e9a4e191, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 6bf80cde3bf10bb459d3b97662149ec9, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 98647e98d3c23f64bac096f3e9a4e191, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 6bf80cde3bf10bb459d3b97662149ec9, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 77cd667b9c8d56e43b23287b231ade3f, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: a076a6129b96d1a42931fe8692fd9eec, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 77cd667b9c8d56e43b23287b231ade3f, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: a076a6129b96d1a42931fe8692fd9eec, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 77cd667b9c8d56e43b23287b231ade3f, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 69151237142f5ff4a957409986af5528, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 177c1da9683991f438561e61dd4e79d5, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 69151237142f5ff4a957409986af5528, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 177c1da9683991f438561e61dd4e79d5, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 69151237142f5ff4a957409986af5528, type: 2}
-  _AssetPayloadIdxs: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001300000014000000
+  mEventList: []
+  _SerializedPayloadTypes: []
+  _AssetPayloads: []
+  _AssetPayloadIdxs: 
   _ColorPayloads: []
   _ColorPayloadIdxs: 
   _CurvePayloads: []

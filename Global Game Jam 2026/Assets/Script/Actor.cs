@@ -19,6 +19,7 @@ public class Actor : MonoBehaviour
     public void OnMask(KoreographyEvent koreoEvent)
     {
         MaskSO mask = (MaskSO)koreoEvent.GetAssetValue();
-        transform.position = GameManager.Instance.positions[mask.mask];
+
+        transform.position = new Vector3(GameManager.Instance.positions[mask.mask].x, transform.position.y, transform.position.z);
     }
 }

@@ -37,23 +37,24 @@ public class MaskPreview : MonoBehaviour
     public void OnBeat(KoreographyEvent beatEvent)
     {
         int currentSample = beatEvent.StartSample;
+        Debug.Log("Current Sample: " + currentSample);
 
         nextEvents[2] = nextEvents[1];
         nextEvents[1] = nextEvents[0];
         nextEvents[0] = null;
 
-        if (events.Count <= 0)
-            return;
-
-        KoreographyEvent evt = events[events.Count - 1];
-
-        Debug.Log("Current Sample: " + currentSample);
-        if (evt.StartSample <= currentSample + timePerSample * 2 + 500)
+        if (events.Count > 0)
         {
-            if (((MaskSO)evt.GetAssetValue()).actor == actor)
+
+            KoreographyEvent evt = events[events.Count - 1];
+
+            if (evt.StartSample <= currentSample + timePerSample * 2 + 500)
             {
-                nextEvents[0] = evt;
-                events.RemoveAt(events.Count - 1);
+                if (((MaskSO)evt.GetAssetValue()).actor == actor)
+                {
+                    nextEvents[0] = evt;
+                    events.RemoveAt(events.Count - 1);
+                }
             }
         }
 
