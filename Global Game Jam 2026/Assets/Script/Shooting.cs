@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using static UnityEngine.GraphicsBuffer;
 
 public class Shooting : MonoBehaviour
 {
     private GameManager.Mask mask;
     private GameManager.Actor actor = GameManager.Actor.None;
-    private GameManager.Mask equippedMask = GameManager.Mask.Happy;
 
     public UnityEvent onShoot = new UnityEvent();
     public UnityEvent onSuccess = new UnityEvent();
@@ -16,6 +16,11 @@ public class Shooting : MonoBehaviour
 
     private List<RaycastResult> raycastResults = new();
     private PointerEventData pointerData;
+
+    private float timeSinceLastShot = 0f;
+
+    [SerializeField] private MaskSelection maskSelection;
+    [SerializeField] private Camera cam;
 
     private void Awake()
     {
@@ -27,7 +32,11 @@ public class Shooting : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             onShoot.Invoke();
-         }
+        }
+        else
+        {
+            timeSinceLastShot += Time.deltaTime;
+        }
     }
 
     void Shoot()
@@ -42,8 +51,7 @@ public class Shooting : MonoBehaviour
         if (success) onSuccess.Invoke();
         else onFailure.Invoke();
 
-        mask = GameManager.Mask.None;
-        actor = GameManager.Actor.None;
+        timeSinceLastShot = 0f;
     }
 
     public void OnPose(KoreographyEvent koreoEvent)
@@ -52,36 +60,52 @@ public class Shooting : MonoBehaviour
 
         mask = pose.mask;
         actor = pose.actor;
+
+        if (timeSinceLastShot < 0.5f)
+        {
+            Evaluate();
+        }
     }
 
     private bool Evaluate()
     {
-        if (!CheckMask()) 
+        var tempMask = mask;
+        var tempActor = actor;
+        mask = GameManager.Mask.None;
+        actor = GameManager.Actor.None;
+
+        if (!CheckMask(tempMask)) 
             return false;
-        if (!CheckAim()) 
+        if (!CheckAim(tempActor)) 
             return false;
 
         return true;
     }
 
-    private bool CheckMask()
+    private bool CheckMask(GameManager.Mask tempMask)
     {
-        return true;
-        //return equippedMask == mask;
+        return maskSelection.selectedMask == tempMask;
     }
 
-    private bool CheckAim()
+    private bool CheckAim(GameManager.Actor tempActor)
     {
-        raycastResults.Clear(); 
-        EventSystem.current.RaycastAll(pointerData, raycastResults);
+        Vector2 mouseWorldPos = cam.ScreenToWorldPoint(Input.mousePosition);
 
-        foreach (var result in raycastResults)
+        RaycastHit2D hit = Physics2D.Raycast(
+            mouseWorldPos,
+            Vector2.zero,
+            0f
+        );
+
+        if (hit.collider != null)
         {
-            if (result.gameObject.TryGetComponent(out Target target))
+            if (hit.collider.TryGetComponent(out Target target))
             {
-                if (target.actor != actor) continue;
-                target.OnShot();
-                return true;
+                if (target.actor == tempActor);
+                {
+                    target.OnShot();
+                    return true;
+                }
             }
         }
 

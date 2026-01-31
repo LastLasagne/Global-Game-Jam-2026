@@ -6,7 +6,7 @@ public class Target : MonoBehaviour
 {
     public GameManager.Actor actor;
     private RectTransform rectTransform;
-    private UnityEngine.UI.Image image;
+    private SpriteRenderer image;
     [SerializeField] private float scale = 0.25f;
     [SerializeField] private float duration = 0.15f;
     private Tween activeTween;
@@ -14,7 +14,7 @@ public class Target : MonoBehaviour
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
-        image = GetComponent<UnityEngine.UI.Image>();
+        image = GetComponent<SpriteRenderer>();
     }
 
     public void OnShot()
@@ -33,7 +33,6 @@ public class Target : MonoBehaviour
     {
         PoseSO mask = (PoseSO)koreoEvent.GetAssetValue();
         image.sprite = mask.sprite;
-        image.SetNativeSize();
-        image.rectTransform.position += mask.position;
+        image.transform.position = mask.position;
     }
 }

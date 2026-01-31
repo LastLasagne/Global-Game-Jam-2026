@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Pose2
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 77346ff4ef2784a4ca4880b25fe1077d, type: 3}
-  position: {x: 100, y: 0, z: 0}
+  position: {x: 0, y: 0, z: 0}
