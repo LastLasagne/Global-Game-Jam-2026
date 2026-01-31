@@ -12,8 +12,8 @@ public class Score : MonoBehaviour
     private void Awake()
     {
         text = GetComponent<TextMeshProUGUI>();
-        //shooting.onFailure.AddListener(OnFailure);
-        //shooting.onSuccess.AddListener(OnSuccess);
+        shooting.onFailure.AddListener(OnFailure);
+        shooting.onSuccess.AddListener(OnSuccess);
     }
 
     private void OnSuccess()

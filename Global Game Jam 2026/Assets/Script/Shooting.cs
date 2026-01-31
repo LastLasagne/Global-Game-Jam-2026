@@ -61,7 +61,7 @@ public class Shooting : MonoBehaviour
     public void OnPose(KoreographyEvent koreoEvent)
     {
         timeOfLastPose = Time.time;
-        PoseSO pose = (PoseSO) koreoEvent.GetAssetValue();
+        MaskSO pose = (MaskSO) koreoEvent.GetAssetValue();
 
         mask = pose.mask;
         actor = pose.actor;
@@ -84,7 +84,8 @@ public class Shooting : MonoBehaviour
 
     private bool CheckMask()
     {
-        return equippedMask == mask;
+        return true;
+        //return equippedMask == mask;
     }
 
     private bool CheckAim()

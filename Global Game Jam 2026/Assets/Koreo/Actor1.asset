@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1223223985, guid: aa81bbec85a3f423193272a7c6154986, type: 3}
+  m_Name: Actor1
+  m_EditorClassIdentifier: 
+  mEventID: Actor1
+  mEventList:
+  - mStartSample: 0
+    mEndSample: 0
+  - mStartSample: 28514
+    mEndSample: 28514
+  - mStartSample: 57029
+    mEndSample: 57029
+  - mStartSample: 85544
+    mEndSample: 85544
+  - mStartSample: 114059
+    mEndSample: 114059
+  - mStartSample: 142574
+    mEndSample: 142574
+  - mStartSample: 171089
+    mEndSample: 171089
+  - mStartSample: 199603
+    mEndSample: 199603
+  - mStartSample: 228118
+    mEndSample: 228118
+  - mStartSample: 256633
+    mEndSample: 256633
+  - mStartSample: 285147
+    mEndSample: 285147
+  - mStartSample: 313662
+    mEndSample: 313662
+  - mStartSample: 342177
+    mEndSample: 342177
+  - mStartSample: 370692
+    mEndSample: 370692
+  - mStartSample: 394006
+    mEndSample: 394006
+  - mStartSample: 427722
+    mEndSample: 427722
+  - mStartSample: 456236
+    mEndSample: 456236
+  - mStartSample: 484751
+    mEndSample: 484751
+  - mStartSample: 513267
+    mEndSample: 513267
+  - mStartSample: 541781
+    mEndSample: 541781
+  - mStartSample: 570296
+    mEndSample: 570296
+  - mStartSample: 598811
+    mEndSample: 598811
+  - mStartSample: 627326
+    mEndSample: 627326
+  - mStartSample: 650640
+    mEndSample: 650640
+  - mStartSample: 684356
+    mEndSample: 684356
+  - mStartSample: 712870
+    mEndSample: 712870
+  - mStartSample: 741385
+    mEndSample: 741385
+  - mStartSample: 769900
+    mEndSample: 769900
+  - mStartSample: 798414
+    mEndSample: 798414
+  - mStartSample: 826929
+    mEndSample: 826929
+  - mStartSample: 855444
+    mEndSample: 855444
+  - mStartSample: 883959
+    mEndSample: 883959
+  - mStartSample: 907273
+    mEndSample: 907273
+  - mStartSample: 940989
+    mEndSample: 940989
+  - mStartSample: 969503
+    mEndSample: 969503
+  - mStartSample: 998018
+    mEndSample: 998018
+  _SerializedPayloadTypes:
+  - SonicBloom.Koreo.AssetPayload
+  _AssetPayloads:
+  - mAssetVal: {fileID: 11400000, guid: 9187f65098e636144b3e6c966aa9fe74, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: c3c40352dc28c554589831b46f7969f3, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 9187f65098e636144b3e6c966aa9fe74, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: c3c40352dc28c554589831b46f7969f3, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 9187f65098e636144b3e6c966aa9fe74, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: c3c40352dc28c554589831b46f7969f3, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 9187f65098e636144b3e6c966aa9fe74, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: c3c40352dc28c554589831b46f7969f3, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 9187f65098e636144b3e6c966aa9fe74, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 9187f65098e636144b3e6c966aa9fe74, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: c3c40352dc28c554589831b46f7969f3, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 9187f65098e636144b3e6c966aa9fe74, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: c3c40352dc28c554589831b46f7969f3, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 9187f65098e636144b3e6c966aa9fe74, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: c3c40352dc28c554589831b46f7969f3, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 9187f65098e636144b3e6c966aa9fe74, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: c3c40352dc28c554589831b46f7969f3, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 9187f65098e636144b3e6c966aa9fe74, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 9187f65098e636144b3e6c966aa9fe74, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: c3c40352dc28c554589831b46f7969f3, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 9187f65098e636144b3e6c966aa9fe74, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: c3c40352dc28c554589831b46f7969f3, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 9187f65098e636144b3e6c966aa9fe74, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: c3c40352dc28c554589831b46f7969f3, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 9187f65098e636144b3e6c966aa9fe74, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: c3c40352dc28c554589831b46f7969f3, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 9187f65098e636144b3e6c966aa9fe74, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 9187f65098e636144b3e6c966aa9fe74, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: c3c40352dc28c554589831b46f7969f3, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 9187f65098e636144b3e6c966aa9fe74, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: c3c40352dc28c554589831b46f7969f3, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 9187f65098e636144b3e6c966aa9fe74, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: c3c40352dc28c554589831b46f7969f3, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 9187f65098e636144b3e6c966aa9fe74, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: c3c40352dc28c554589831b46f7969f3, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 9187f65098e636144b3e6c966aa9fe74, type: 2}
+  _AssetPayloadIdxs: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f00000020000000210000002200000023000000
+  _ColorPayloads: []
+  _ColorPayloadIdxs: 
+  _CurvePayloads: []
+  _CurvePayloadIdxs: 
+  _FloatPayloads: []
+  _FloatPayloadIdxs: 
+  _GradientPayloads: []
+  _GradientPayloadIdxs: 
+  _IntPayloads: []
+  _IntPayloadIdxs: 
+  _SpectrumPayloads: []
+  _SpectrumPayloadIdxs: 
+  _TextPayloads: []
+  _TextPayloadIdxs: 

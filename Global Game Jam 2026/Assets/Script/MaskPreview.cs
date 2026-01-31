@@ -51,7 +51,7 @@ public class MaskPreview : MonoBehaviour
         if (evt.StartSample <= currentSample + timePerSample * 3 &&
             evt.StartSample > currentSample + timePerSample * 2)
         {
-            if (((PoseSO)evt.GetAssetValue()).actor == actor)
+            if (((MaskSO)evt.GetAssetValue()).actor == actor)
             {
                 nextEvents[0] = evt;
                 events.RemoveAt(events.Count - 1);
@@ -63,8 +63,8 @@ public class MaskPreview : MonoBehaviour
 
     void UpdateMasks()
     {
-        image1.sprite = nextEvents[0] != null ? GameManager.Instance.sprites[((PoseSO)nextEvents[0].GetAssetValue()).mask] : null;
-        image2.sprite = nextEvents[1] != null ? GameManager.Instance.sprites[((PoseSO)nextEvents[1].GetAssetValue()).mask] : null;
-        image3.sprite = nextEvents[2] != null ? GameManager.Instance.sprites[((PoseSO)nextEvents[2].GetAssetValue()).mask] : null;
+        image1.sprite = nextEvents[0] != null ? GameManager.Instance.sprites[((MaskSO)nextEvents[0].GetAssetValue()).mask] : null;
+        image2.sprite = nextEvents[1] != null ? GameManager.Instance.sprites[((MaskSO)nextEvents[1].GetAssetValue()).mask] : null;
+        image3.sprite = nextEvents[2] != null ? GameManager.Instance.sprites[((MaskSO)nextEvents[2].GetAssetValue()).mask] : null;
     }
 }
