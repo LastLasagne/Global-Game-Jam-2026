@@ -13,9 +13,9 @@ public class Shooting : MonoBehaviour
     private float reloadTime = 0.25f;
     private float timeSinceLastShot = 0.0f;
 
-    private Mask mask;
-    private Actor actor = 0;
-    private Mask equippedMask = Mask.Happy;
+    private GameManager.Mask mask;
+    private GameManager.Actor actor = 0;
+    private GameManager.Mask equippedMask = GameManager.Mask.Happy;
 
     public UnityEvent onShoot = new UnityEvent { };
     public UnityEvent onSuccess = new UnityEvent { };
@@ -23,18 +23,6 @@ public class Shooting : MonoBehaviour
 
     private List<RaycastResult> raycastResults = new();
     private PointerEventData pointerData;
-    public enum Mask
-    {
-        Happy,
-        Sad,
-        Angry
-    }
-
-    public enum Actor
-    {
-        Actor1,
-        Actor2
-    }
 
     private void Awake()
     {

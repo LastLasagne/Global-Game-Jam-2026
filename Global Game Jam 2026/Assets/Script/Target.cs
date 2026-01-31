@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
-    public Shooting.Actor actor;
+    public GameManager.Actor actor;
     private RectTransform rectTransform;
 
     private void Awake()
