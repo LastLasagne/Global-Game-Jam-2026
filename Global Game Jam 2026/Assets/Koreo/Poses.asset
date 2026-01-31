@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEventID: Poses
   mEventList:
-  - mStartSample: 114059
+  - mStartSample: 85544
     mEndSample: 114059
   - mStartSample: 142574
     mEndSample: 142574
@@ -23,9 +23,11 @@ MonoBehaviour:
   - mStartSample: 456237
     mEndSample: 456237
   _SerializedPayloadTypes:
+  - SonicBloom.Koreo.AssetPayload
   - SonicBloom.Koreo.TextPayload
-  _AssetPayloads: []
-  _AssetPayloadIdxs: 
+  _AssetPayloads:
+  - mAssetVal: {fileID: 11400000, guid: 3d72b75c1f570234e963015176a05632, type: 2}
+  _AssetPayloadIdxs: 00000000
   _ColorPayloads: []
   _ColorPayloadIdxs: 
   _CurvePayloads: []
@@ -41,5 +43,4 @@ MonoBehaviour:
   _TextPayloads:
   - mTextVal: Pose
   - mTextVal: Pose
-  - mTextVal: Pose
-  _TextPayloadIdxs: 000000000200000003000000
+  _TextPayloadIdxs: 0200000003000000

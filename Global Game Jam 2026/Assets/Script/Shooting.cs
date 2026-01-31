@@ -1,5 +1,8 @@
 using SonicBloom.Koreo;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 public class Shooting : MonoBehaviour
 {
@@ -7,11 +10,19 @@ public class Shooting : MonoBehaviour
     private float timeOfLastPose = 0f;
     float timingThreshold = 0.2f;
 
-    private Vector2 aimPos;
+    private float reloadTime = 0.25f;
+    private float timeSinceLastShot = 0.0f;
 
-    private int mask;
-    private Mask equippedMask;
+    private Mask mask;
+    private Actor actor = 0;
+    private Mask equippedMask = Mask.Happy;
 
+    public UnityEvent onShoot = new UnityEvent { };
+    public UnityEvent onSuccess = new UnityEvent { };
+    public UnityEvent onFailure = new UnityEvent { };
+
+    private List<RaycastResult> raycastResults = new();
+    private PointerEventData pointerData;
     public enum Mask
     {
         Happy,
@@ -19,35 +30,62 @@ public class Shooting : MonoBehaviour
         Angry
     }
 
+    public enum Actor
+    {
+        Actor1,
+        Actor2
+    }
+
+    private void Awake()
+    {
+        timeSinceLastShot = reloadTime;
+        onShoot.AddListener(Shoot);
+    }
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Shoot();
-        }
+            if (timeSinceLastShot >= reloadTime)
+            {
+                onShoot.Invoke();
+                timeSinceLastShot = 0.0f;
+            }
+         }
+        
+        timeSinceLastShot += Time.deltaTime;
     }
 
     void Shoot()
     {
-        //check if last pose change was closer than some time ago
+        pointerData = new PointerEventData(EventSystem.current)
+        {
+            position = Input.mousePosition
+        };
         timeOfLastShot = Time.time;
-        aimPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        bool success = Evaluate();
+
+        if (success) onSuccess.Invoke();
+        else onFailure.Invoke();
     }
 
     public void OnPose(KoreographyEvent koreoEvent)
     {
-        //check if last shot was closer than some time ago
         timeOfLastPose = Time.time;
-        mask = koreoEvent.GetIntValue();
+        PoseSO pose = (PoseSO) koreoEvent.GetAssetValue();
+
+        mask = pose.mask;
+        actor = pose.actor;
     }
 
-    private void Evaluate()
+    private bool Evaluate()
     {
-        if (!CheckTiming()) return;
-        if (!CheckMask()) return;
-        if (!CheckAim()) return;
+        if (!CheckTiming()) return false;
+        if (!CheckMask()) return false;
+        if (!CheckAim()) return false;
 
-        //success
+        return true;
     }
 
     private bool CheckTiming()
@@ -58,12 +96,25 @@ public class Shooting : MonoBehaviour
 
     private bool CheckMask()
     {
-        return ((int)equippedMask) == mask;
+        return equippedMask == mask;
     }
 
     private bool CheckAim()
     {
-        return true;
+        raycastResults.Clear(); 
+        EventSystem.current.RaycastAll(pointerData, raycastResults);
+
+        foreach (var result in raycastResults)
+        {
+            if (result.gameObject.TryGetComponent(out Target target))
+            {
+                if (target.actor != actor) continue;
+                target.OnShot();
+                return true;
+            }
+        }
+
+        return false;
     }
 
 }
