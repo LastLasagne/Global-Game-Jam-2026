@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bd77c242f7d62614e8b3d29ba64c1ead
+guid: e1697c5f014a8b242878cf49a9ecb5f7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,23 +97,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sad_Mask_0
+      name: Stock images_4_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2048
-        height: 2048
+        width: 1024
+        height: 1024
       alignment: 9
-      pivot: {x: 0.49753544, y: 0.59803534}
+      pivot: {x: 0.45666057, y: 0.7357626}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 357f8e6d0b314d84da4d4843001e7dc2
-      internalID: 965162494
+      spriteID: f538526500513484bbeeb9b0d042d75d
+      internalID: 290725777
       vertices: []
       indices: 
       edges: []
@@ -122,7 +122,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 938c3f9c80cf6e047a5f38a8c09e25e8
+    spriteID: e05c3c2073b3d284ea9534bd8654b6dd
     internalID: 0
     vertices: []
     indices: 
@@ -132,7 +132,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Sad_Mask_0: 965162494
+      Stock images_4_0: 290725777
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
