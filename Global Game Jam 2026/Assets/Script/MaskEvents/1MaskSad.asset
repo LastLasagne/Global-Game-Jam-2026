@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f078ccd0363a29347bd32fb25aef5840, type: 3}
-  m_Name: MaskSad
+  m_Name: 1MaskSad
   m_EditorClassIdentifier: 
   actor: 1
   mask: 2

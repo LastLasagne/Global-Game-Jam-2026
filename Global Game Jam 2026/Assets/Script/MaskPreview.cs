@@ -1,20 +1,16 @@
 using SonicBloom.Koreo;
 using System.Collections.Generic;
-using UnityEditor.PackageManager;
-using UnityEditor.Rendering.Universal;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class MaskPreview : MonoBehaviour
 {
-    [SerializeField] private Koreography koreography;
-    [SerializeField] private string eventID;
-    [SerializeField] private GameManager.Actor actor;
+    [SerializeField] private GameManager.Actor actor = GameManager.Actor.None;
+    private PreviewManager previewManager;
 
     private float timePerSample = 28514f;
 
     private List<KoreographyEvent> nextEvents = new();
-    private List<KoreographyEvent> events = new();
 
     private Image image1;
     private Image image2;
@@ -22,8 +18,7 @@ public class MaskPreview : MonoBehaviour
 
     void Awake()
     {
-        events = koreography.GetTrackByID(eventID).GetAllEvents();
-        events.Reverse();
+        previewManager = GetComponentInParent<PreviewManager>();
 
         nextEvents.Add(null);
         nextEvents.Add(null);
@@ -43,17 +38,16 @@ public class MaskPreview : MonoBehaviour
         nextEvents[1] = nextEvents[0];
         nextEvents[0] = null;
 
-        if (events.Count > 0)
+        if (previewManager.events.Count > 0)
         {
-
-            KoreographyEvent evt = events[events.Count - 1];
+            KoreographyEvent evt = previewManager.events[previewManager.events.Count - 1];
 
             if (evt.StartSample <= currentSample + timePerSample * 2 + 500)
             {
                 if (((MaskSO)evt.GetAssetValue()).actor == actor)
                 {
                     nextEvents[0] = evt;
-                    events.RemoveAt(events.Count - 1);
+                    previewManager.events.RemoveAt(previewManager.events.Count - 1);
                 }
             }
         }

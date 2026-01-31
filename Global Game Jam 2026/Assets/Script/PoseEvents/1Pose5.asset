@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6763584a06e71e54695469d80901c69f, type: 3}
-  m_Name: Pose4
+  m_Name: 1Pose5
   m_EditorClassIdentifier: 
-  sprite: {fileID: 290725777, guid: e1697c5f014a8b242878cf49a9ecb5f7, type: 3}
-  position: {x: 0, y: 0, z: 0}
+  sprite: {fileID: 1373213314, guid: 0aa4c34ef0e39d14b9919bdc00bf9fbe, type: 3}
+  position: {x: 1.5, y: 8.5, z: 0}

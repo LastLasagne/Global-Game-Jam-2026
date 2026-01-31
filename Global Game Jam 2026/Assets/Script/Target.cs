@@ -24,6 +24,6 @@ public class Target : MonoBehaviour
     public void OnBeat(KoreographyEvent koreoEvent)
     {
         PoseSO pose = (PoseSO)koreoEvent.GetAssetValue();
-        transform.position = pose.position;
+        transform.localPosition = new Vector3(pose.position.x, pose.position.y, transform.localPosition.z);
     }
 }
