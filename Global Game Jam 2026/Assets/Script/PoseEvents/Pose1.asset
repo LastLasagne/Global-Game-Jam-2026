@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6763584a06e71e54695469d80901c69f, type: 3}
   m_Name: Pose1
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: ab9286de370f9b847943354cbf48f59e, type: 3}
+  sprite: {fileID: 58819980, guid: 38634b44d91204c4a821cabf1c118c7c, type: 3}
   position: {x: 0, y: 0, z: 0}

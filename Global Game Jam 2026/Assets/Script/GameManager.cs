@@ -23,6 +23,9 @@ public class GameManager : MonoBehaviour
     [SerializedDictionary("MaskType", "Sprite")]
     public SerializedDictionary<Mask, Sprite> sprites;
 
+    [SerializedDictionary("MaskType", "Position")]
+    public SerializedDictionary<Mask, Vector3> positions;
+
     private void Awake()
     {
         if (Instance == null)
