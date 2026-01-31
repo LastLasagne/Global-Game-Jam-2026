@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 
     public enum Mask
     {
+        None,
         Happy,
         Sad,
         Angry
@@ -14,6 +15,7 @@ public class GameManager : MonoBehaviour
 
     public enum Actor
     {
+        None,
         Actor1,
         Actor2
     }

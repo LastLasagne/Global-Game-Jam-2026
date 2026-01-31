@@ -6,15 +6,8 @@ using UnityEngine.EventSystems;
 
 public class Shooting : MonoBehaviour
 {
-    private float timeOfLastShot = 0f;
-    private float timeOfLastPose = 0f;
-    float timingThreshold = 0.2f;
-
-    private float reloadTime = 0.25f;
-    private float timeSinceLastShot = 0.0f;
-
     private GameManager.Mask mask;
-    private GameManager.Actor actor = 0;
+    private GameManager.Actor actor = GameManager.Actor.None;
     private GameManager.Mask equippedMask = GameManager.Mask.Happy;
 
     public UnityEvent onShoot = new UnityEvent();
@@ -26,7 +19,6 @@ public class Shooting : MonoBehaviour
 
     private void Awake()
     {
-        timeSinceLastShot = reloadTime;
         onShoot.AddListener(Shoot);
     }
 
@@ -34,14 +26,8 @@ public class Shooting : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (timeSinceLastShot >= reloadTime)
-            {
-                onShoot.Invoke();
-                timeSinceLastShot = 0.0f;
-            }
+            onShoot.Invoke();
          }
-        
-        timeSinceLastShot += Time.deltaTime;
     }
 
     void Shoot()
@@ -50,17 +36,18 @@ public class Shooting : MonoBehaviour
         {
             position = Input.mousePosition
         };
-        timeOfLastShot = Time.time;
 
         bool success = Evaluate();
 
         if (success) onSuccess.Invoke();
         else onFailure.Invoke();
+
+        mask = GameManager.Mask.None;
+        actor = GameManager.Actor.None;
     }
 
     public void OnPose(KoreographyEvent koreoEvent)
     {
-        timeOfLastPose = Time.time;
         MaskSO pose = (MaskSO) koreoEvent.GetAssetValue();
 
         mask = pose.mask;
@@ -69,17 +56,12 @@ public class Shooting : MonoBehaviour
 
     private bool Evaluate()
     {
-        if (!CheckTiming()) return false;
-        if (!CheckMask()) return false;
-        if (!CheckAim()) return false;
+        if (!CheckMask()) 
+            return false;
+        if (!CheckAim()) 
+            return false;
 
         return true;
-    }
-
-    private bool CheckTiming()
-    {
-        float timeDifference = Mathf.Abs(timeOfLastShot - timeOfLastPose);
-        return timeDifference <= timingThreshold;
     }
 
     private bool CheckMask()

@@ -14,48 +14,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEventID: Poses
   mEventList:
-  - mStartSample: 114059
-    mEndSample: 114059
-  - mStartSample: 142574
-    mEndSample: 142574
-  - mStartSample: 171089
-    mEndSample: 171089
-  - mStartSample: 199603
-    mEndSample: 199603
-  - mStartSample: 228118
-    mEndSample: 228118
-  - mStartSample: 256633
-    mEndSample: 256633
-  - mStartSample: 285148
-    mEndSample: 285148
-  - mStartSample: 313663
-    mEndSample: 313663
-  - mStartSample: 342178
-    mEndSample: 342178
-  - mStartSample: 370693
-    mEndSample: 370693
-  - mStartSample: 399207
-    mEndSample: 399207
-  - mStartSample: 427722
-    mEndSample: 427722
   - mStartSample: 456237
     mEndSample: 456237
   - mStartSample: 484752
     mEndSample: 484752
   - mStartSample: 513267
     mEndSample: 513267
-  - mStartSample: 541782
-    mEndSample: 541782
-  - mStartSample: 570297
-    mEndSample: 570297
-  - mStartSample: 598811
-    mEndSample: 598811
+  - mStartSample: 570296
+    mEndSample: 570296
   - mStartSample: 627326
     mEndSample: 627326
   - mStartSample: 655841
     mEndSample: 655841
   - mStartSample: 684356
     mEndSample: 684356
+  - mStartSample: 712871
+    mEndSample: 712871
+  - mStartSample: 741385
+    mEndSample: 741385
+  - mStartSample: 769900
+    mEndSample: 769900
+  - mStartSample: 798415
+    mEndSample: 798415
+  - mStartSample: 826930
+    mEndSample: 826930
+  - mStartSample: 855445
+    mEndSample: 855445
+  - mStartSample: 883960
+    mEndSample: 883960
+  - mStartSample: 912475
+    mEndSample: 912475
+  - mStartSample: 940989
+    mEndSample: 940989
+  - mStartSample: 969504
+    mEndSample: 969504
+  - mStartSample: 998019
+    mEndSample: 998019
+  - mStartSample: 1026534
+    mEndSample: 1026534
   - mStartSample: 1140594
     mEndSample: 1140594
   - mStartSample: 2167128
@@ -79,8 +75,6 @@ MonoBehaviour:
   - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
   - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
   - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
   - mAssetVal: {fileID: 11400000, guid: e49a7018f99820246b5e3364ba1c296f, type: 2}
   - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
   - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
@@ -89,7 +83,7 @@ MonoBehaviour:
   - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
   - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
   - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
-  _AssetPayloadIdxs: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001300000014000000150000001600000017000000
+  _AssetPayloadIdxs: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000
   _ColorPayloads: []
   _ColorPayloadIdxs: 
   _CurvePayloads: []

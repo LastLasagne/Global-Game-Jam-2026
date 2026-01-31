@@ -156,8 +156,7 @@ MonoBehaviour:
     mEndSample: 1967524
   - mStartSample: 1996039
     mEndSample: 1996039
-  _SerializedPayloadTypes:
-  - SonicBloom.Koreo.TextPayload
+  _SerializedPayloadTypes: []
   _AssetPayloads: []
   _AssetPayloadIdxs: 
   _ColorPayloads: []
@@ -172,66 +171,5 @@ MonoBehaviour:
   _IntPayloadIdxs: 
   _SpectrumPayloads: []
   _SpectrumPayloadIdxs: 
-  _TextPayloads:
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: Beat
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  - mTextVal: 
-  _TextPayloadIdxs: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c000000
+  _TextPayloads: []
+  _TextPayloadIdxs: 

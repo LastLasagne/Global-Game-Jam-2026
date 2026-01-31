@@ -702,7 +702,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1355d449d298e324c876558596ca4a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actor: 0
+  actor: 1
+  scale: 0.25
+  duration: 0.15
 --- !u!114 &295674733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2138,7 +2140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shooting: {fileID: 1169066945}
-  scoreReward: 50
+  scoreReward: 1
 --- !u!114 &1586081198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2319,7 +2321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   koreography: {fileID: 11400000, guid: 5410b3e31acea5e4c87034b1a9d75abe, type: 2}
   eventID: Poses
-  actor: 0
+  actor: 1
 --- !u!114 &1611954586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2539,9 +2541,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 65136435}
   - {fileID: 1032009124}
   - {fileID: 292319580}
+  - {fileID: 65136435}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2716,7 +2718,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1355d449d298e324c876558596ca4a69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actor: 0
+  actor: 2
+  scale: 0.25
+  duration: 0.15
 --- !u!114 &1928631825
 MonoBehaviour:
   m_ObjectHideFlags: 0

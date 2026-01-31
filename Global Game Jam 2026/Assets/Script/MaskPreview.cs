@@ -48,8 +48,7 @@ public class MaskPreview : MonoBehaviour
         KoreographyEvent evt = events[events.Count - 1];
 
         Debug.Log("Current Sample: " + currentSample);
-        if (evt.StartSample <= currentSample + timePerSample * 3 &&
-            evt.StartSample > currentSample + timePerSample * 2)
+        if (evt.StartSample <= currentSample + timePerSample * 2 + 500)
         {
             if (((MaskSO)evt.GetAssetValue()).actor == actor)
             {

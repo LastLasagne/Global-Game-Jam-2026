@@ -1,24 +1,28 @@
+using DG.Tweening;
 using SonicBloom.Koreo;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Target : MonoBehaviour
 {
     public GameManager.Actor actor;
     private RectTransform rectTransform;
-    private Image image;
+    private UnityEngine.UI.Image image;
+    [SerializeField] private float scale = 0.25f;
+    [SerializeField] private float duration = 0.15f;
+    private Tween activeTween;
 
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
-        image = GetComponent<Image>();
+        image = GetComponent<UnityEngine.UI.Image>();
     }
 
     public void OnShot()
     {
-        // Add logic for when the target is shot
-        Debug.Log("Target has been shot!");
-        //Destroy(gameObject);
+        activeTween?.Kill();
+
+        rectTransform
+        .DOPunchScale(Vector3.one * scale, duration, vibrato: 8, elasticity: 0.8f);
     }
 
     public void OnPose(KoreographyEvent koreoEvent)

@@ -11,11 +11,6 @@ public class KoreoListener : MonoBehaviour
 
     void Start()
     {
-        //Koreography playingKoreo = Koreographer.Instance.GetKoreographyAtIndex(0);
-
-        //KoreographyTrackBase rhythmTrack = playingKoreo.GetTrackByID(eventID);
-        //List<KoreographyEvent> rawEvents = rhythmTrack.GetAllEvents();
-
         Koreographer.Instance.RegisterForEvents(eventID, OnKoreoEvent);
     }
 

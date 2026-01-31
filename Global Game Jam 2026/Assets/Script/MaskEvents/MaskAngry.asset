@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f078ccd0363a29347bd32fb25aef5840, type: 3}
   m_Name: MaskAngry
   m_EditorClassIdentifier: 
-  actor: 0
-  mask: 2
+  actor: 1
+  mask: 3
