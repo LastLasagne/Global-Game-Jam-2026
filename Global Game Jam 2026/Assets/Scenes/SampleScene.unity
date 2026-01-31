@@ -627,9 +627,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 292319580}
-  - component: {fileID: 292319581}
   m_Layer: 0
-  m_Name: Game Manager
+  m_Name: RythmUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -652,24 +651,6 @@ Transform:
   - {fileID: 832760251}
   m_Father: {fileID: 1766427211}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &292319581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 292319579}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab8da19e86f4b55489d64a3c3e2b58f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites:
-    m_Keys: 
-    m_Values: []
-  HappyMask: {fileID: 21300000, guid: 52f1130a331d99d439948ffd3be6d3fa, type: 3}
-  SadMask: {fileID: 21300000, guid: 27f98053dae46de41b133f16faf24668, type: 3}
-  AngryMask: {fileID: 21300000, guid: db71530f29e061144b3f1c1443619173, type: 3}
 --- !u!1 &295674730
 GameObject:
   m_ObjectHideFlags: 0
@@ -2238,6 +2219,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1611954583}
   - component: {fileID: 1611954584}
+  - component: {fileID: 1611954585}
+  - component: {fileID: 1611954586}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -2293,6 +2276,49 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1611954585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611954582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f91d391a888355443ae16644c3a8e4d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  koreography: {fileID: 11400000, guid: 5410b3e31acea5e4c87034b1a9d75abe, type: 2}
+  eventID: Poses
+  actor: 0
+--- !u!114 &1611954586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611954582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ad8fa8ee1272f4aa4971d816d1a500, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventID: Beat
+  onEventReceived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1611954585}
+        m_TargetAssemblyTypeName: MaskPreview, Assembly-CSharp
+        m_MethodName: OnBeat
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1616928534
 GameObject:
   m_ObjectHideFlags: 0
@@ -2401,6 +2427,7 @@ GameObject:
   - component: {fileID: 1766427210}
   - component: {fileID: 1766427209}
   - component: {fileID: 1766427208}
+  - component: {fileID: 1766427212}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2493,6 +2520,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1766427212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766427207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab8da19e86f4b55489d64a3c3e2b58f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+    _serializedList:
+    - Key: 0
+      Value: {fileID: 21300000, guid: 52f1130a331d99d439948ffd3be6d3fa, type: 3}
+    - Key: 1
+      Value: {fileID: 21300000, guid: 27f98053dae46de41b133f16faf24668, type: 3}
+    - Key: 2
+      Value: {fileID: 21300000, guid: db71530f29e061144b3f1c1443619173, type: 3}
 --- !u!1 &1855341226
 GameObject:
   m_ObjectHideFlags: 0
@@ -2691,10 +2738,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1ad8fa8ee1272f4aa4971d816d1a500, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eventID: 
+  eventID: Poses
   onEventReceived:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1928631824}
+        m_TargetAssemblyTypeName: Target, Assembly-CSharp
+        m_MethodName: OnPose
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2024012129
 GameObject:
   m_ObjectHideFlags: 0

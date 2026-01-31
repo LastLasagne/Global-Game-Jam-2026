@@ -5,6 +5,6 @@ public class Pose : MonoBehaviour
 {
     public void OnPose(KoreographyEvent koreoEvent)
     {
-        Debug.Log("Pose detected!");
+        //Debug.Log("Pose detected!");
     }
 }

@@ -17,9 +17,9 @@ public class Shooting : MonoBehaviour
     private GameManager.Actor actor = 0;
     private GameManager.Mask equippedMask = GameManager.Mask.Happy;
 
-    public UnityEvent onShoot = new UnityEvent { };
-    public UnityEvent onSuccess = new UnityEvent { };
-    public UnityEvent onFailure = new UnityEvent { };
+    public UnityEvent onShoot = new UnityEvent();
+    public UnityEvent onSuccess = new UnityEvent();
+    public UnityEvent onFailure = new UnityEvent();
 
     private List<RaycastResult> raycastResults = new();
     private PointerEventData pointerData;

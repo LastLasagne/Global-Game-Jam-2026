@@ -136,6 +136,26 @@ MonoBehaviour:
     mEndSample: 1682376
   - mStartSample: 1710891
     mEndSample: 1710891
+  - mStartSample: 1739405
+    mEndSample: 1739405
+  - mStartSample: 1767920
+    mEndSample: 1767920
+  - mStartSample: 1796435
+    mEndSample: 1796435
+  - mStartSample: 1824950
+    mEndSample: 1824950
+  - mStartSample: 1853465
+    mEndSample: 1853465
+  - mStartSample: 1881980
+    mEndSample: 1881980
+  - mStartSample: 1910495
+    mEndSample: 1910495
+  - mStartSample: 1939009
+    mEndSample: 1939009
+  - mStartSample: 1967524
+    mEndSample: 1967524
+  - mStartSample: 1996039
+    mEndSample: 1996039
   _SerializedPayloadTypes:
   - SonicBloom.Koreo.TextPayload
   _AssetPayloads: []

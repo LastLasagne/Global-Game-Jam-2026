@@ -14,4 +14,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actor: 0
   mask: 0
-  position: {x: 0, y: 0}

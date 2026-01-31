@@ -1,7 +1,5 @@
-using System;
-using System.Collections.Generic;
+using AYellowpaper.SerializedCollections;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,11 +18,8 @@ public class GameManager : MonoBehaviour
         Actor2
     }
 
-    public SerializedDictionary<Mask, Sprite> sprites = new();
-
-    public Sprite HappyMask;
-    public Sprite SadMask;
-    public Sprite AngryMask;
+    [SerializedDictionary("MaskType", "Sprite")]
+    public SerializedDictionary<Mask, Sprite> sprites;
 
     private void Awake()
     {

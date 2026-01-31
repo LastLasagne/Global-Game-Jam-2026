@@ -20,10 +20,10 @@ public class Target : MonoBehaviour
 
     public void OnPose(KoreographyEvent koreoEvent)
     {
-        PoseSO pose = (PoseSO) koreoEvent.GetAssetValue();
-        if (pose.actor == actor)
-        {
-            rectTransform.position = pose.position;
-        }
+        //PoseSO pose = (PoseSO) koreoEvent.GetAssetValue();
+        //if (pose.actor == actor)
+        //{
+        //    rectTransform.position = pose.position;
+        //}
     }
 }

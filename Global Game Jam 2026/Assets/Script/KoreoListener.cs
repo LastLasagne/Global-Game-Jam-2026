@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class KoreoListener : MonoBehaviour
 {
     [SerializeField] private string eventID;
-    [SerializeField] private UnityEvent<KoreographyEvent> onEventReceived;
+    [SerializeField] private UnityEvent<KoreographyEvent> onEventReceived = new();
 
     void Start()
     {
