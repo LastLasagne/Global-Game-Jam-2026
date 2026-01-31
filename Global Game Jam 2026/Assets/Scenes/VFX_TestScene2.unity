@@ -722,11 +722,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-    m_Keys: 
-    m_Values: []
-  HappyMask: {fileID: 21300000, guid: 52f1130a331d99d439948ffd3be6d3fa, type: 3}
-  SadMask: {fileID: 21300000, guid: 27f98053dae46de41b133f16faf24668, type: 3}
-  AngryMask: {fileID: 21300000, guid: db71530f29e061144b3f1c1443619173, type: 3}
+    _serializedList: []
+  positions:
+    _serializedList: []
 --- !u!1 &295674730
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,6 +776,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actor: 0
+  scale: 0.25
+  duration: 0.15
 --- !u!114 &295674733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1785,6 +1785,8 @@ MonoBehaviour:
   onFailure:
     m_PersistentCalls:
       m_Calls: []
+  maskSelection: {fileID: 0}
+  cam: {fileID: 0}
 --- !u!114 &1169066946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2852,6 +2854,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actor: 0
+  scale: 0.25
+  duration: 0.15
 --- !u!114 &1928631825
 MonoBehaviour:
   m_ObjectHideFlags: 0
