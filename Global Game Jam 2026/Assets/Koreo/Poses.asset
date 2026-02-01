@@ -46,20 +46,12 @@ MonoBehaviour:
     mEndSample: 1523454
   - mStartSample: 1563545
     mEndSample: 1563545
-  - mStartSample: 1583590
-    mEndSample: 1583590
   - mStartSample: 1603636
     mEndSample: 1603636
-  - mStartSample: 1623681
-    mEndSample: 1623681
   - mStartSample: 1643727
     mEndSample: 1643727
-  - mStartSample: 1663772
-    mEndSample: 1663772
   - mStartSample: 1683818
     mEndSample: 1683818
-  - mStartSample: 1703863
-    mEndSample: 1703863
   - mStartSample: 1723908
     mEndSample: 1723908
   - mStartSample: 1764000
@@ -94,28 +86,18 @@ MonoBehaviour:
     mEndSample: 2325272
   - mStartSample: 2385409
     mEndSample: 2385409
-  - mStartSample: 2405454
-    mEndSample: 2405454
   - mStartSample: 2425500
     mEndSample: 2425500
-  - mStartSample: 2445545
-    mEndSample: 2445545
   - mStartSample: 2465590
     mEndSample: 2465590
   - mStartSample: 2505681
     mEndSample: 2505681
   - mStartSample: 2545772
     mEndSample: 2545772
-  - mStartSample: 2565818
-    mEndSample: 2565818
   - mStartSample: 2585863
     mEndSample: 2585863
-  - mStartSample: 2605908
-    mEndSample: 2605908
   - mStartSample: 2625954
     mEndSample: 2625954
-  - mStartSample: 2646000
-    mEndSample: 2646000
   - mStartSample: 2686090
     mEndSample: 2686090
   - mStartSample: 2726181
@@ -156,10 +138,6 @@ MonoBehaviour:
   - mAssetVal: {fileID: 11400000, guid: df842c06edeb36c40ab307b8e2dc29d0, type: 2}
   - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
   - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: df842c06edeb36c40ab307b8e2dc29d0, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: df842c06edeb36c40ab307b8e2dc29d0, type: 2}
   - mAssetVal: {fileID: 11400000, guid: df842c06edeb36c40ab307b8e2dc29d0, type: 2}
   - mAssetVal: {fileID: 11400000, guid: df842c06edeb36c40ab307b8e2dc29d0, type: 2}
   - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
@@ -180,16 +158,11 @@ MonoBehaviour:
   - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
   - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
   - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
   - mAssetVal: {fileID: 11400000, guid: df842c06edeb36c40ab307b8e2dc29d0, type: 2}
   - mAssetVal: {fileID: 11400000, guid: df842c06edeb36c40ab307b8e2dc29d0, type: 2}
   - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
   - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
   - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
-  - mAssetVal: {fileID: 11400000, guid: e49a7018f99820246b5e3364ba1c296f, type: 2}
   - mAssetVal: {fileID: 11400000, guid: e49a7018f99820246b5e3364ba1c296f, type: 2}
   - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
   - mAssetVal: {fileID: 11400000, guid: e49a7018f99820246b5e3364ba1c296f, type: 2}
@@ -200,7 +173,7 @@ MonoBehaviour:
   - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
   - mAssetVal: {fileID: 11400000, guid: df842c06edeb36c40ab307b8e2dc29d0, type: 2}
   - mAssetVal: {fileID: 11400000, guid: 5814f565c8ae80e4d8dd96475de9196e, type: 2}
-  _AssetPayloadIdxs: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c000000
+  _AssetPayloadIdxs: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f00000030000000310000003200000033000000
   _ColorPayloads: []
   _ColorPayloadIdxs: 
   _CurvePayloads: []
