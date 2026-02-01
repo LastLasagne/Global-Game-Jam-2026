@@ -1606,7 +1606,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1619941235}
+    m_TransformParent: {fileID: 461451001}
     m_Modifications:
     - target: {fileID: 578861983316826383, guid: 04c9a0abfa8922b4698d1b40b9eeaaff, type: 3}
       propertyPath: m_Enabled
@@ -1638,15 +1638,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3773605549935357331, guid: 04c9a0abfa8922b4698d1b40b9eeaaff, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3773605549935357331, guid: 04c9a0abfa8922b4698d1b40b9eeaaff, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3773605549935357331, guid: 04c9a0abfa8922b4698d1b40b9eeaaff, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3773605549935357331, guid: 04c9a0abfa8922b4698d1b40b9eeaaff, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1997,6 +1997,40 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!1 &461451000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 461451001}
+  m_Layer: 0
+  m_Name: Muzzles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &461451001
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 461451000}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 395670950}
+  - {fileID: 2075983653}
+  - {fileID: 643964879}
+  m_Father: {fileID: 1560240130}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &486160603 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8346177957641656570, guid: d5400007db904b3448bfff9a54b2ae2e, type: 3}
@@ -2307,7 +2341,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1619941235}
+    m_TransformParent: {fileID: 461451001}
     m_Modifications:
     - target: {fileID: 5050083331800908150, guid: c7aa200bf4c94334f9250177bb9a8aad, type: 3}
       propertyPath: m_Enabled
@@ -2331,15 +2365,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5717290703279675661, guid: c7aa200bf4c94334f9250177bb9a8aad, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5717290703279675661, guid: c7aa200bf4c94334f9250177bb9a8aad, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5717290703279675661, guid: c7aa200bf4c94334f9250177bb9a8aad, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5717290703279675661, guid: c7aa200bf4c94334f9250177bb9a8aad, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4312,9 +4346,13 @@ MonoBehaviour:
       m_Calls: []
   maskSelection: {fileID: 1832982007}
   cam: {fileID: 800599111}
+  muzzleTransform: {fileID: 461451001}
+  muzzle: {fileID: 1524113738}
   muzzleFlashHappy: {fileID: 1442766011}
   muzzleFlashSad: {fileID: 605882224}
   muzzleFlashAngry: {fileID: 2075983655}
+  minRotation: -60
+  maxRotation: 30
   impactParent: {fileID: 28216352}
   impactHappy: {fileID: 1093148216}
   impactSad: {fileID: 1987663511}
@@ -5066,6 +5104,58 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &1524113736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1524113737}
+  - component: {fileID: 1524113738}
+  m_Layer: 0
+  m_Name: MuzzlePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1524113737
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524113736}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2144435508}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -50.4, y: 43.6}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1524113738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524113736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1490ab75e44710244af2dae4bcaff48c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  muzzleUI: {fileID: 1524113737}
+  uiCamera: {fileID: 0}
+  worldCamera: {fileID: 800599111}
+  depthFromCamera: 5
 --- !u!1 &1525507577
 GameObject:
   m_ObjectHideFlags: 0
@@ -5326,10 +5416,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1619941235}
   - {fileID: 28216352}
   - {fileID: 1466944016}
   - {fileID: 1309978706}
+  - {fileID: 461451001}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1563213521
@@ -5544,7 +5634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shooting: {fileID: 1169066945}
-  scoreReward: 1
+  scoreReward: 5
   claps: {fileID: 1466944016}
   comboVFX: {fileID: 1309978706}
 --- !u!114 &1586081198
@@ -5877,40 +5967,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scale: 0.25
   duration: 0.15
---- !u!1 &1619941234
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1619941235}
-  m_Layer: 0
-  m_Name: Muzzles
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1619941235
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1619941234}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.3181059, z: -0, w: 0.9480552}
-  m_LocalPosition: {x: -2.7229788, y: 2.104019, z: -7.7979536}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 395670950}
-  - {fileID: 2075983653}
-  - {fileID: 643964879}
-  m_Father: {fileID: 1560240130}
-  m_LocalEulerAnglesHint: {x: 0, y: -37.097, z: 0}
 --- !u!1001 &1691349300
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7300,7 +7356,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1619941235}
+    m_TransformParent: {fileID: 461451001}
     m_Modifications:
     - target: {fileID: 2823536672384195434, guid: 2138b4599a0538c48ba31114517ccc89, type: 3}
       propertyPath: m_InitialEventName
@@ -7332,15 +7388,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7524938805538170417, guid: 2138b4599a0538c48ba31114517ccc89, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7524938805538170417, guid: 2138b4599a0538c48ba31114517ccc89, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7524938805538170417, guid: 2138b4599a0538c48ba31114517ccc89, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7524938805538170417, guid: 2138b4599a0538c48ba31114517ccc89, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7712,6 +7768,7 @@ GameObject:
   - component: {fileID: 2144435508}
   - component: {fileID: 2144435510}
   - component: {fileID: 2144435509}
+  - component: {fileID: 2144435511}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -7726,16 +7783,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2144435507}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.38268343, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5.07, y: 5.07, z: 5.07}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 1524113737}
   m_Father: {fileID: 1169066944}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 45, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 73.56, y: -543.1211}
+  m_AnchoredPosition: {x: 217.36, y: -543.1211}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2144435509
@@ -7776,6 +7834,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2144435507}
   m_CullTransparentMesh: 1
+--- !u!114 &2144435511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144435507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb30fe135608c7c488e58cc9a8aa40ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxOffset: 500
+  followSpeed: 8
+  verticalBias: {x: 1, y: 0.5}
+  maxYRotation: 40
+  rotationSpeed: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -25,9 +25,13 @@ public class Shooting : MonoBehaviour
     [SerializeField] private MaskSelection maskSelection;
     [SerializeField] private Camera cam;
 
+    [SerializeField] private Transform muzzleTransform;
+    [SerializeField] private Muzzle muzzle;
     [SerializeField] private VisualEffect muzzleFlashHappy;
     [SerializeField] private VisualEffect muzzleFlashSad;
     [SerializeField] private VisualEffect muzzleFlashAngry;
+    [SerializeField] private float minRotation = -45f;
+    [SerializeField] private float maxRotation = 30;
 
     [SerializeField] private Transform impactParent;
     [SerializeField] private VisualEffect impactHappy;
@@ -90,6 +94,14 @@ public class Shooting : MonoBehaviour
         var tempActor = actor;
         mask = GameManager.Mask.None;
         actor = GameManager.Actor.None;
+
+        Vector3 muzzleWorldPos = muzzle.GetWorldMuzzlePosition();
+        muzzleTransform.position = muzzleWorldPos;
+        Vector2 mouseViewport = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+
+        float yRot = Mathf.Lerp(minRotation, maxRotation, mouseViewport.x);
+        Quaternion targetRot = Quaternion.Euler(0, yRot, 0);
+        muzzleTransform.rotation = targetRot;
 
         switch (maskSelection.selectedMask)
         {
