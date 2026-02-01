@@ -23,6 +23,9 @@ public class GameManager : MonoBehaviour
     [SerializedDictionary("MaskType", "MaskAssetSO")]
     public SerializedDictionary<Mask, MaskAssetsSO> maskAssets;
 
+    [SerializedDictionary("Actor", "actorIdlePos")]
+    public SerializedDictionary<Actor, Vector3> actorIdlePos;
+
     [SerializedDictionary("MaskType", "Position")]
     public SerializedDictionary<Mask, Vector3> positions;
 

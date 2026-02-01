@@ -1,10 +1,14 @@
 using AYellowpaper.SerializedCollections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MaskSelection : MonoBehaviour
 {
     [SerializedDictionary("MaskType", "RectTransform")]
     public SerializedDictionary<GameManager.Mask, RectTransform> maskDict;
+
+    [SerializeField] private Image gunAmmo;
+    [SerializeField] private Image gunAmmoCrosshair;
 
     public GameManager.Mask selectedMask;
 
@@ -33,6 +37,8 @@ public class MaskSelection : MonoBehaviour
     {
         maskDict[selectedMask].localScale = Vector3.one;
         selectedMask = mask;
-        maskDict[selectedMask].localScale = Vector3.one * 1.2f;
+        maskDict[selectedMask].localScale = Vector3.one * 1.33f;
+        gunAmmo.sprite = GameManager.Instance.maskAssets[selectedMask].maskSprite;
+        gunAmmoCrosshair.sprite = GameManager.Instance.maskAssets[selectedMask].maskSprite;
     }
 }

@@ -22,6 +22,11 @@ public class Actor : MonoBehaviour
         MaskSO mask = (MaskSO)koreoEvent.GetAssetValue();
 
         if (mask.actor == actor)
-            transform.position = new Vector3(GameManager.Instance.positions[mask.mask].x, transform.position.y, transform.position.z);
+            transform.position = GameManager.Instance.positions[mask.mask];
+    }
+
+    public void OnBeat(KoreographyEvent koreoEvent)
+    {
+        transform.position = GameManager.Instance.actorIdlePos[actor];
     }
 }
