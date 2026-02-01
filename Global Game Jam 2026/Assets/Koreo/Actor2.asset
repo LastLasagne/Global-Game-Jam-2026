@@ -12,11 +12,42 @@ MonoBehaviour:
   m_Script: {fileID: -1223223985, guid: aa81bbec85a3f423193272a7c6154986, type: 3}
   m_Name: Actor2
   m_EditorClassIdentifier: 
-  mEventID: 
-  mEventList: []
-  _SerializedPayloadTypes: []
-  _AssetPayloads: []
-  _AssetPayloadIdxs: 
+  mEventID: Actor2
+  mEventList:
+  - mStartSample: 481090
+    mEndSample: 481090
+  - mStartSample: 501136
+    mEndSample: 501136
+  - mStartSample: 521181
+    mEndSample: 521181
+  - mStartSample: 541227
+    mEndSample: 541227
+  - mStartSample: 561272
+    mEndSample: 561272
+  - mStartSample: 581318
+    mEndSample: 581318
+  - mStartSample: 601363
+    mEndSample: 601363
+  - mStartSample: 621408
+    mEndSample: 621408
+  - mStartSample: 641454
+    mEndSample: 641454
+  - mStartSample: 661499
+    mEndSample: 661499
+  _SerializedPayloadTypes:
+  - SonicBloom.Koreo.AssetPayload
+  _AssetPayloads:
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: e1e4d0c71e111bd48868c7d68aa22666, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 0e546a7409b0d874e8725cce50e840fd, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 422ac016d76bcf044a919950fa2aca4b, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 1be8198450e2d324b94016fd6d118b06, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: cee5ed23dcb4f2645b06a52f9a35b56f, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 477395df53c563849bfe32bb03f2cdb7, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 4ef6492818100bb4ba5ab9b35730e4ea, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 4ce643c2416b2544cb1f59d93305cc69, type: 2}
+  _AssetPayloadIdxs: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
   _ColorPayloads: []
   _ColorPayloadIdxs: 
   _CurvePayloads: []
