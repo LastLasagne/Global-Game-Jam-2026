@@ -16,7 +16,7 @@ public class MenuScoreDisplay : MonoBehaviour
         else
         {
             scorePanel.enabled = true;
-            scoreText.text =  score.ToString() + "/50";
+            scoreText.text =  score.ToString() + "/52";
         }
     }
 }
