@@ -57,8 +57,33 @@ public class MaskPreview : MonoBehaviour
 
     void UpdateMasks()
     {
-        image1.sprite = nextEvents[0] != null ? GameManager.Instance.sprites[((MaskSO)nextEvents[0].GetAssetValue()).mask] : null;
-        image2.sprite = nextEvents[1] != null ? GameManager.Instance.sprites[((MaskSO)nextEvents[1].GetAssetValue()).mask] : null;
-        image3.sprite = nextEvents[2] != null ? GameManager.Instance.sprites[((MaskSO)nextEvents[2].GetAssetValue()).mask] : null;
+        if (nextEvents[0] != null)
+        {
+            image1.sprite = GameManager.Instance.maskAssets[((MaskSO)nextEvents[0].GetAssetValue()).mask].smallLight;
+            image1.GetComponent<ScaleTween>().Scale();
+        }
+        else
+        {
+            image1.sprite = GameManager.Instance.maskAssets[GameManager.Mask.None].smallLight;
+        }
+
+        if (nextEvents[1] != null)
+        {
+            image2.sprite = GameManager.Instance.maskAssets[((MaskSO)nextEvents[1].GetAssetValue()).mask].smallLight;
+            image2.GetComponent<ScaleTween>().Scale();
+        }
+        else
+        {
+            image2.sprite = GameManager.Instance.maskAssets[GameManager.Mask.None].smallLight;
+        }
+
+        if (nextEvents[2] != null)
+        {
+            image3.sprite = GameManager.Instance.maskAssets[((MaskSO)nextEvents[2].GetAssetValue()).mask].bigLight;
+        }
+        else
+        {
+            image3.sprite = GameManager.Instance.maskAssets[GameManager.Mask.None].smallLight;
+        }
     }
 }

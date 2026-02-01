@@ -20,8 +20,8 @@ public class GameManager : MonoBehaviour
         Actor2
     }
 
-    [SerializedDictionary("MaskType", "Sprite")]
-    public SerializedDictionary<Mask, Sprite> sprites;
+    [SerializedDictionary("MaskType", "MaskAssetSO")]
+    public SerializedDictionary<Mask, MaskAssetsSO> maskAssets;
 
     [SerializedDictionary("MaskType", "Position")]
     public SerializedDictionary<Mask, Vector3> positions;

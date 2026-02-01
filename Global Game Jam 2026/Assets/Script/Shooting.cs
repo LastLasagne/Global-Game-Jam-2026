@@ -1,8 +1,11 @@
+using DG.Tweening;
 using SonicBloom.Koreo;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.UIElements;
+using UnityEngine.VFX;
 using static UnityEngine.GraphicsBuffer;
 
 public class Shooting : MonoBehaviour
@@ -21,6 +24,20 @@ public class Shooting : MonoBehaviour
 
     [SerializeField] private MaskSelection maskSelection;
     [SerializeField] private Camera cam;
+
+    [SerializeField] private VisualEffect muzzleFlashHappy;
+    [SerializeField] private VisualEffect muzzleFlashSad;
+    [SerializeField] private VisualEffect muzzleFlashAngry;
+
+    [SerializeField] private Transform impactParent;
+    [SerializeField] private VisualEffect impactHappy;
+    [SerializeField] private VisualEffect impactSad;
+    [SerializeField] private VisualEffect impactAngry;
+
+    [SerializeField] private RectTransform gunTransform;
+    [SerializeField] private float scale = 0.25f;
+    [SerializeField] private float duration = 0.15f;
+    private Tween activeTween;
 
     private void Awake()
     {
@@ -74,10 +91,40 @@ public class Shooting : MonoBehaviour
         mask = GameManager.Mask.None;
         actor = GameManager.Actor.None;
 
-        if (!CheckMask(tempMask)) 
+        switch (maskSelection.selectedMask)
+        {
+            case GameManager.Mask.Happy:
+                muzzleFlashHappy.Play();
+                break;
+            case GameManager.Mask.Sad:
+                muzzleFlashSad.Play();
+                break;
+            case GameManager.Mask.Angry:
+                muzzleFlashAngry.Play();
+                break;
+        }
+
+        activeTween?.Kill();
+        gunTransform
+        .DOPunchScale(Vector3.one * scale, duration, vibrato: 8, elasticity: 0.8f);
+
+        if (!CheckMask(tempMask))
             return false;
         if (!CheckAim(tempActor)) 
             return false;
+
+        switch(maskSelection.selectedMask)
+        {
+            case GameManager.Mask.Happy:
+                impactHappy.Play();
+                break;
+            case GameManager.Mask.Sad:
+                impactSad.Play();
+                break;
+            case GameManager.Mask.Angry:
+                impactAngry.Play();
+                break;
+        }
 
         return true;
     }
@@ -89,25 +136,41 @@ public class Shooting : MonoBehaviour
 
     private bool CheckAim(GameManager.Actor tempActor)
     {
-        Vector2 mouseWorldPos = cam.ScreenToWorldPoint(Input.mousePosition);
 
-        RaycastHit2D hit = Physics2D.Raycast(
-            mouseWorldPos,
-            Vector2.zero,
-            0f
-        );
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
 
-        if (hit.collider != null)
+        if (Physics.Raycast(ray, out RaycastHit hit, 100.0f))
         {
-            if (hit.collider.TryGetComponent(out Target target))
+            if (hit.collider.transform.parent.TryGetComponent(out Target target))
             {
-                if (target.actor == tempActor);
+                if (target.actor == tempActor)
                 {
                     target.OnShot();
+                    impactParent.position = hit.point;
                     return true;
                 }
             }
         }
+
+        //Vector2 mouseWorldPos = cam.ScreenToWorldPoint(Input.mousePosition);
+
+        //RaycastHit2D hit = Physics2D.Raycast(
+        //    mouseWorldPos,
+        //    Vector2.zero,
+        //    0f
+        //);
+
+        //if (hit.collider != null)
+        //{
+        //    if (hit.collider.TryGetComponent(out Target target))
+        //    {
+        //        if (target.actor == tempActor);
+        //        {
+        //            target.OnShot();
+        //            return true;
+        //        }
+        //    }
+        //}
 
         return false;
     }

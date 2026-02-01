@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c86d667100a65b428435d957bb8beec, type: 3}
+  m_Name: Angry
+  m_EditorClassIdentifier: 
+  smallLight: {fileID: 21300000, guid: 2d8862242dd918347a7ee6053290ed37, type: 3}
+  bigLight: {fileID: 21300000, guid: b2dafcaf1023fdd48931a46fa92f6888, type: 3}
+  coneActor1: {fileID: 21300000, guid: a4ff0e7f2095d4441b2cadf5530ec1e7, type: 3}
+  coneActor2: {fileID: 21300000, guid: 3c17e8487e9f08e4e91442f7513fa6c2, type: 3}
+  maskSprite: {fileID: 21300000, guid: 04db7d97c2d636d40a5ff09e6e8fe32d, type: 3}
