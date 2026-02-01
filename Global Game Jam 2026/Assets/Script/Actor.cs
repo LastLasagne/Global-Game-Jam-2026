@@ -4,6 +4,7 @@ using UnityEngine;
 public class Actor : MonoBehaviour
 {
     private SpriteRenderer image;
+    [SerializeField] private GameManager.Actor actor = GameManager.Actor.None;
 
     private void Awake()
     {
@@ -20,6 +21,7 @@ public class Actor : MonoBehaviour
     {
         MaskSO mask = (MaskSO)koreoEvent.GetAssetValue();
 
-        transform.position = new Vector3(GameManager.Instance.positions[mask.mask].x, transform.position.y, transform.position.z);
+        if (mask.actor == actor)
+            transform.position = new Vector3(GameManager.Instance.positions[mask.mask].x, transform.position.y, transform.position.z);
     }
 }

@@ -14,29 +14,347 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mEventID: Actor2
   mEventList:
-  - mStartSample: 481090
-    mEndSample: 481090
-  - mStartSample: 501136
-    mEndSample: 501136
-  - mStartSample: 521181
-    mEndSample: 521181
-  - mStartSample: 541227
-    mEndSample: 541227
-  - mStartSample: 561272
-    mEndSample: 561272
-  - mStartSample: 581318
-    mEndSample: 581318
+  - mStartSample: 120272
+    mEndSample: 120272
+  - mStartSample: 140318
+    mEndSample: 140318
+  - mStartSample: 160363
+    mEndSample: 160363
+  - mStartSample: 180409
+    mEndSample: 180409
+  - mStartSample: 200454
+    mEndSample: 200454
+  - mStartSample: 220500
+    mEndSample: 220500
+  - mStartSample: 240545
+    mEndSample: 240545
+  - mStartSample: 260591
+    mEndSample: 260591
+  - mStartSample: 280636
+    mEndSample: 280636
+  - mStartSample: 300682
+    mEndSample: 300682
+  - mStartSample: 320727
+    mEndSample: 320727
+  - mStartSample: 340773
+    mEndSample: 340773
+  - mStartSample: 360818
+    mEndSample: 360818
+  - mStartSample: 380864
+    mEndSample: 380864
+  - mStartSample: 400909
+    mEndSample: 400909
+  - mStartSample: 420955
+    mEndSample: 420955
+  - mStartSample: 441000
+    mEndSample: 441000
+  - mStartSample: 461046
+    mEndSample: 461046
+  - mStartSample: 481091
+    mEndSample: 481091
+  - mStartSample: 501137
+    mEndSample: 501137
+  - mStartSample: 521182
+    mEndSample: 521182
+  - mStartSample: 541228
+    mEndSample: 541228
+  - mStartSample: 561273
+    mEndSample: 561273
+  - mStartSample: 581319
+    mEndSample: 581319
   - mStartSample: 601363
     mEndSample: 601363
-  - mStartSample: 621408
-    mEndSample: 621408
+  - mStartSample: 621409
+    mEndSample: 621409
   - mStartSample: 641454
     mEndSample: 641454
-  - mStartSample: 661499
-    mEndSample: 661499
+  - mStartSample: 661500
+    mEndSample: 661500
+  - mStartSample: 681545
+    mEndSample: 681545
+  - mStartSample: 701591
+    mEndSample: 701591
+  - mStartSample: 721636
+    mEndSample: 721636
+  - mStartSample: 741682
+    mEndSample: 741682
+  - mStartSample: 761727
+    mEndSample: 761727
+  - mStartSample: 781773
+    mEndSample: 781773
+  - mStartSample: 801818
+    mEndSample: 801818
+  - mStartSample: 821864
+    mEndSample: 821864
+  - mStartSample: 841909
+    mEndSample: 841909
+  - mStartSample: 861955
+    mEndSample: 861955
+  - mStartSample: 882000
+    mEndSample: 882000
+  - mStartSample: 902046
+    mEndSample: 902046
+  - mStartSample: 922091
+    mEndSample: 922091
+  - mStartSample: 942137
+    mEndSample: 942137
+  - mStartSample: 962182
+    mEndSample: 962182
+  - mStartSample: 982228
+    mEndSample: 982228
+  - mStartSample: 1002273
+    mEndSample: 1002273
+  - mStartSample: 1022319
+    mEndSample: 1022319
+  - mStartSample: 1042364
+    mEndSample: 1042364
+  - mStartSample: 1062410
+    mEndSample: 1062410
+  - mStartSample: 1082454
+    mEndSample: 1082454
+  - mStartSample: 1102500
+    mEndSample: 1102500
+  - mStartSample: 1122545
+    mEndSample: 1122545
+  - mStartSample: 1142591
+    mEndSample: 1142591
+  - mStartSample: 1162636
+    mEndSample: 1162636
+  - mStartSample: 1182682
+    mEndSample: 1182682
+  - mStartSample: 1202727
+    mEndSample: 1202727
+  - mStartSample: 1222773
+    mEndSample: 1222773
+  - mStartSample: 1242818
+    mEndSample: 1242818
+  - mStartSample: 1262864
+    mEndSample: 1262864
+  - mStartSample: 1282909
+    mEndSample: 1282909
+  - mStartSample: 1302955
+    mEndSample: 1302955
+  - mStartSample: 1323000
+    mEndSample: 1323000
+  - mStartSample: 1343046
+    mEndSample: 1343046
+  - mStartSample: 1363091
+    mEndSample: 1363091
+  - mStartSample: 1383137
+    mEndSample: 1383137
+  - mStartSample: 1403182
+    mEndSample: 1403182
+  - mStartSample: 1423228
+    mEndSample: 1423228
+  - mStartSample: 1443273
+    mEndSample: 1443273
+  - mStartSample: 1463319
+    mEndSample: 1463319
+  - mStartSample: 1483364
+    mEndSample: 1483364
+  - mStartSample: 1503410
+    mEndSample: 1503410
+  - mStartSample: 1523455
+    mEndSample: 1523455
+  - mStartSample: 1543501
+    mEndSample: 1543501
+  - mStartSample: 1563545
+    mEndSample: 1563545
+  - mStartSample: 1583591
+    mEndSample: 1583591
+  - mStartSample: 1603636
+    mEndSample: 1603636
+  - mStartSample: 1623682
+    mEndSample: 1623682
+  - mStartSample: 1643727
+    mEndSample: 1643727
+  - mStartSample: 1663773
+    mEndSample: 1663773
+  - mStartSample: 1683818
+    mEndSample: 1683818
+  - mStartSample: 1703864
+    mEndSample: 1703864
+  - mStartSample: 1723909
+    mEndSample: 1723909
+  - mStartSample: 1743955
+    mEndSample: 1743955
+  - mStartSample: 1764000
+    mEndSample: 1764000
+  - mStartSample: 1784046
+    mEndSample: 1784046
+  - mStartSample: 1804090
+    mEndSample: 1804090
+  - mStartSample: 1824136
+    mEndSample: 1824136
+  - mStartSample: 1844181
+    mEndSample: 1844181
+  - mStartSample: 1864227
+    mEndSample: 1864227
+  - mStartSample: 1884272
+    mEndSample: 1884272
+  - mStartSample: 1904318
+    mEndSample: 1904318
+  - mStartSample: 1924363
+    mEndSample: 1924363
+  - mStartSample: 1944409
+    mEndSample: 1944409
+  - mStartSample: 1964454
+    mEndSample: 1964454
+  - mStartSample: 1984500
+    mEndSample: 1984500
+  - mStartSample: 2004545
+    mEndSample: 2004545
+  - mStartSample: 2024591
+    mEndSample: 2024591
+  - mStartSample: 2044636
+    mEndSample: 2044636
+  - mStartSample: 2064682
+    mEndSample: 2064682
+  - mStartSample: 2084727
+    mEndSample: 2084727
+  - mStartSample: 2104773
+    mEndSample: 2104773
+  - mStartSample: 2124818
+    mEndSample: 2124818
+  - mStartSample: 2144864
+    mEndSample: 2144864
+  - mStartSample: 2164909
+    mEndSample: 2164909
+  - mStartSample: 2184955
+    mEndSample: 2184955
+  - mStartSample: 2205000
+    mEndSample: 2205000
+  - mStartSample: 2225046
+    mEndSample: 2225046
+  - mStartSample: 2245091
+    mEndSample: 2245091
+  - mStartSample: 2265137
+    mEndSample: 2265137
+  - mStartSample: 3467863
+    mEndSample: 3467863
+  - mStartSample: 3487909
+    mEndSample: 3487909
+  - mStartSample: 3507954
+    mEndSample: 3507954
+  - mStartSample: 3528000
+    mEndSample: 3528000
+  - mStartSample: 3548045
+    mEndSample: 3548045
+  - mStartSample: 3568090
+    mEndSample: 3568090
+  - mStartSample: 3588136
+    mEndSample: 3588136
+  - mStartSample: 3608181
+    mEndSample: 3608181
   _SerializedPayloadTypes:
   - SonicBloom.Koreo.AssetPayload
   _AssetPayloads:
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
+  - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
   - mAssetVal: {fileID: 11400000, guid: ee1790d5187c92f4ea604c0d784c2f17, type: 2}
   - mAssetVal: {fileID: 11400000, guid: 8255c140affa0084986976cb18d53d9a, type: 2}
   - mAssetVal: {fileID: 11400000, guid: e1e4d0c71e111bd48868c7d68aa22666, type: 2}
@@ -47,7 +365,7 @@ MonoBehaviour:
   - mAssetVal: {fileID: 11400000, guid: 477395df53c563849bfe32bb03f2cdb7, type: 2}
   - mAssetVal: {fileID: 11400000, guid: 4ef6492818100bb4ba5ab9b35730e4ea, type: 2}
   - mAssetVal: {fileID: 11400000, guid: 4ce643c2416b2544cb1f59d93305cc69, type: 2}
-  _AssetPayloadIdxs: 00000000010000000200000003000000040000000500000006000000070000000800000009000000
+  _AssetPayloadIdxs: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002a0000002b0000002c0000002d0000002e0000002f000000300000003100000032000000330000003400000035000000360000003700000038000000390000003a0000003b0000003c0000003d0000003e0000003f000000400000004100000042000000430000004400000045000000460000004700000048000000490000004a0000004b0000004c0000004d0000004e0000004f000000500000005100000052000000530000005400000055000000560000005700000058000000590000005a0000005b0000005c0000005d0000005e0000005f000000600000006100000062000000630000006400000065000000660000006700000068000000690000006a0000006b0000006c0000006d0000006e0000006f00000070000000710000007200000073000000
   _ColorPayloads: []
   _ColorPayloadIdxs: 
   _CurvePayloads: []

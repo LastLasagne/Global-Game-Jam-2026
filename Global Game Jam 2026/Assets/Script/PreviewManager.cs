@@ -1,8 +1,6 @@
 using SonicBloom.Koreo;
 using System.Collections.Generic;
-using UnityEditor.PackageManager;
 using UnityEngine;
-using UnityEngine.LightTransport;
 
 public class PreviewManager : MonoBehaviour
 {
