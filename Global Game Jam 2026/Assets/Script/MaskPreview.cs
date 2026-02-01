@@ -2,9 +2,13 @@ using SonicBloom.Koreo;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.VFX;
 
 public class MaskPreview : MonoBehaviour
 {
+
+    [SerializeField] private List<VisualEffect> previews;
+
     [SerializeField] private GameManager.Actor actor = GameManager.Actor.None;
     private PreviewManager previewManager;
 
@@ -69,8 +73,13 @@ public class MaskPreview : MonoBehaviour
 
         if (nextEvents[1] != null)
         {
-            image2.sprite = GameManager.Instance.maskAssets[((MaskSO)nextEvents[1].GetAssetValue()).mask].smallLight;
+            GameManager.Mask maskPreview = ((MaskSO)nextEvents[1].GetAssetValue()).mask;
+            image2.sprite = GameManager.Instance.maskAssets[maskPreview].smallLight;
             image2.GetComponent<ScaleTween>().Scale();
+            if (maskPreview != GameManager.Mask.None)
+            {
+                previews[(int)maskPreview - 1].Play();
+            }
         }
         else
         {
