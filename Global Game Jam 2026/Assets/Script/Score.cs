@@ -1,31 +1,31 @@
 using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.VFX;
 
 public class Score : MonoBehaviour
 {
-    [SerializeField] Shooting shooting;
     private TextMeshProUGUI text;
     private int score = 0;
     [SerializeField] private int scoreReward = 1;
     [SerializeField] private Transform claps;
     [SerializeField] private Transform comboVFX;
 
+    public UnityEvent onCombo = new UnityEvent();
+
     private void Awake()
     {
         text = GetComponent<TextMeshProUGUI>();
-        shooting.onFailure.AddListener(OnFailure);
-        shooting.onSuccess.AddListener(OnSuccess);
     }
 
-    private void OnSuccess()
+    public void OnSuccess()
     {
         score += scoreReward;
         EvaluateScore();
     }
 
-    private void OnFailure()
+    public void OnFailure()
     {
         score = 0;
         EvaluateScore();
@@ -45,25 +45,31 @@ public class Score : MonoBehaviour
             claps.GetChild(score - 1).gameObject.SetActive(true);
         }
 
-        switch(score)
+        switch (score)
         {
             case 10:
-                comboVFX.transform.GetChild(0).GetComponent<VisualEffect>().Play();
+                PlayCombo(0);
                 break;
             case 20:
-                comboVFX.transform.GetChild(1).GetComponent<VisualEffect>().Play();
+                PlayCombo(1);
                 break;
             case 30:
-                comboVFX.transform.GetChild(2).GetComponent<VisualEffect>().Play();
+                PlayCombo(2);
                 break;
             case 40:
-                comboVFX.transform.GetChild(3).GetComponent<VisualEffect>().Play();
+                PlayCombo(3);
                 break;
             case 50:
-                comboVFX.transform.GetChild(4).GetComponent<VisualEffect>().Play();
+                PlayCombo(4);
                 break;
         }
 
         text.text = score.ToString();
+    }
+
+    private void PlayCombo(int i)
+    {
+        comboVFX.transform.GetChild(i).GetComponent<VisualEffect>().Play();
+        onCombo.Invoke();
     }
 }
