@@ -2,11 +2,13 @@ using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.VFX;
 
 public class Score : MonoBehaviour
 {
     private TextMeshProUGUI text;
+    private int combo = 0;
     private int score = 0;
     [SerializeField] private int scoreReward = 1;
     [SerializeField] private Transform claps;
@@ -21,31 +23,32 @@ public class Score : MonoBehaviour
 
     public void OnSuccess()
     {
+        combo += scoreReward;
         score += scoreReward;
         EvaluateScore();
     }
 
     public void OnFailure()
     {
-        score = 0;
+        combo = 0;
         EvaluateScore();
     }
 
     private void EvaluateScore()
     {
-        if (score == 0)
+        if (combo == 0)
         {
             foreach (Transform child in claps)
             {
                 child.gameObject.SetActive(false);
             }
         }
-        else if (score < claps.childCount)
+        else if (combo < claps.childCount)
         {
-            claps.GetChild(score - 1).gameObject.SetActive(true);
+            claps.GetChild(combo - 1).gameObject.SetActive(true);
         }
 
-        switch (score)
+        switch (combo)
         {
             case 10:
                 PlayCombo(0);
@@ -64,12 +67,18 @@ public class Score : MonoBehaviour
                 break;
         }
 
-        text.text = score.ToString();
+        text.text = combo.ToString();
     }
 
     private void PlayCombo(int i)
     {
         comboVFX.transform.GetChild(i).GetComponent<VisualEffect>().Play();
         onCombo.Invoke();
+    }
+
+    public void SendScore()
+    {
+        MenuScore.Instance.score = score;
+        SceneManager.LoadScene("Menu");
     }
 }

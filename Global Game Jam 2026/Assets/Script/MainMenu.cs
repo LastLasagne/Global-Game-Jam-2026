@@ -14,6 +14,7 @@ public class MainMenu : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     private void OnStartButtonClicked()
     {
+        MenuScore.Instance.score = 0;
         SceneManager.LoadScene("Level");
     }
 
