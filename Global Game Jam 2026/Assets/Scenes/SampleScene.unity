@@ -6547,7 +6547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52e239952ddaee348bc2963bc2e55fd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreReward: 5
+  scoreReward: 0
   claps: {fileID: 1466944016}
   comboVFX: {fileID: 1309978706}
   onCombo:
